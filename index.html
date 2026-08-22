@@ -202,23 +202,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Category 3 -->
-                <div class="skill-category glass-card reveal fade-up" style="transition-delay: 0.3s;">
-                    <div class="skill-icon-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Development</h3>
-                    <ul class="skill-list">
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>REST APIs</li>
-                    </ul>
-                </div>
 
                 <!-- Skill Category 4 -->
                 <div class="skill-category glass-card reveal fade-up" style="transition-delay: 0.4s;">
@@ -260,7 +243,7 @@
         </div>
     </section>
 
-    <!-- Featured Project Section (Also serves as Project Experience) -->
+    <!-- Featured Project Section -->
     <section id="featured-project" class="section">
         <div class="container">
             <div class="section-header reveal fade-up">
@@ -270,46 +253,36 @@
 
             <div class="project-case-study glass-card reveal fade-up">
                 <div class="project-header">
-                    <span class="project-badge">Real-World AI Automation Project</span>
-                    <h3 class="project-title">Student Scholarship AI Chatbot</h3>
+                    <span class="project-badge">AI Automation Project</span>
+                    <h3 class="project-title">Restaurant Order Management AI Agent</h3>
                 </div>
 
                 <div class="project-highlight-box">
-                    <span class="gradient-text fw-bold">AI Agents + RAG + Automation + APIs + Webhooks + Lead
-                        Qualification + Customer Classification + Human Escalation</span>
-                    <p class="highlight-desc">This project goes beyond a traditional chatbot by connecting AI-powered
-                        conversations with automated business processes and human intervention when necessary.</p>
+                    <span class="gradient-text fw-bold">AI Agent + Telegram Integration + Order Processing + Google
+                        Sheets Sync + Automated Notifications</span>
+                    <p class="highlight-desc">An intelligent agent that receives restaurant orders via Telegram,
+                        confirms details with customers, notifies the kitchen, and logs data for inventory tracking.</p>
                 </div>
 
                 <div class="project-grid">
                     <div class="project-content">
                         <h4>Overview</h4>
-                        <p>An AI-powered customer support and lead qualification automation system designed for a
-                            company specialized in student travel and scholarship opportunities. The system automates
-                            communication with students, answers questions using a knowledge base, identifies potential
-                            travel leads, collects lead information, and escalates unknown questions to a human when
-                            necessary.</p>
+                        <p>An AI-powered restaurant assistant designed to fully automate the order-taking process over
+                            Telegram. The agent is equipped with the restaurant's knowledge base and menu. It interacts
+                            with customers, answers their inquiries using the provided data, takes their orders, and
+                            confirms the final details with them.</p>
 
-                        <h4>Project Status / Context</h4>
-                        <p>The project was initially presented to a company based on a real business requirement. The
-                            company approved the concept and requested that the system be implemented so they could
-                            evaluate the final solution.</p>
-
-                        <h4>Project Problem</h4>
-                        <p>The company was receiving a significant number of inquiries from students interested in
-                            studying abroad, scholarships, and travel opportunities. Handling these inquiries manually
-                            required significant time and could result in delayed responses. Delayed responses can cause
-                            potential students to lose interest or move to alternative providers. The business needed an
-                            automated system capable of responding quickly, providing relevant information, identifying
-                            serious potential customers, and reducing repetitive workload for the team.</p>
-
-                        <h4>Project Solution</h4>
-                        <p>I designed and built an AI automation workflow that receives incoming customer messages,
-                            analyzes their intent, retrieves relevant information from a knowledge base, and
-                            automatically determines the appropriate next action.</p>
+                        <h4>Project Workflow</h4>
+                        <p>Once the customer confirms the order, the agent performs the following automated actions:</p>
+                        <ul>
+                            <li><strong>Kitchen Notification:</strong> Sends an automated message to the chef containing
+                                the customer's name, phone number, and exact order details.</li>
+                            <li><strong>Inventory Tracking:</strong> Logs the identical order data into a Google Sheet
+                                to help the management team track inventory and monitor daily sales seamlessly.</li>
+                        </ul>
 
                         <div class="workflow-visualization glass-card">
-                            <div class="workflow-step">Student Message</div>
+                            <div class="workflow-step">Telegram Customer</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="workflow-arrow">
@@ -323,27 +296,12 @@
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
-                            <div class="workflow-step">Knowledge Base / RAG</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="workflow-arrow">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                            <div class="workflow-step highlight">Intent Analysis &amp; Classification</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="workflow-arrow">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
                             <div class="workflow-branches">
-                                <div class="workflow-step">Automated Response</div>
-                                <div class="workflow-step">Lead Qualification</div>
-                                <div class="workflow-step">Human Escalation</div>
+                                <div class="workflow-step">Notify Chef</div>
+                                <div class="workflow-step">Update Google Sheets</div>
+                                <div class="workflow-step">Confirm with Customer</div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="project-sidebar">
@@ -351,76 +309,25 @@
                             <h4>Technologies Used</h4>
                             <div class="tags">
                                 <span class="tag">n8n</span>
-                                <span class="tag">Supabase</span>
-                                <span class="tag">RAG</span>
+                                <span class="tag">Telegram API</span>
+                                <span class="tag">OpenRouter</span>
+                                <span class="tag">Postgres</span>
+                                <span class="tag">Google Sheets API</span>
+                                <span class="tag">Gmail API</span>
                                 <span class="tag">AI Agents</span>
-                                <span class="tag">Instagram API</span>
-                                <span class="tag">Facebook API</span>
-                                <span class="tag">Gmail</span>
-                                <span class="tag">Telegram</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Webhooks</span>
-                                <span class="tag">REST APIs</span>
-                                <span class="tag">Vector Database</span>
                             </div>
                         </div>
 
                         <div class="benefits-card glass-card">
                             <h4>Project Benefits</h4>
                             <ul class="benefits-list">
-                                <li>Reduced response time</li>
-                                <li>Reduced repetitive manual work</li>
-                                <li>Faster customer support</li>
-                                <li>Automated customer classification</li>
-                                <li>Lead qualification</li>
-                                <li>Automated lead collection</li>
-                                <li>Reduced risk of losing potential customers</li>
-                                <li>24/7 automated support</li>
-                                <li>Human escalation when required</li>
-                                <li>Organized customer support workflow</li>
+                                <li>Fully automated order taking</li>
+                                <li>Eliminates human error in orders</li>
+                                <li>Instant notification to the kitchen</li>
+                                <li>Real-time inventory tracking</li>
+                                <li>24/7 customer support on Telegram</li>
+                                <li>Centralized data management</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ai-capabilities">
-                    <h4>AI Agent Capabilities</h4>
-                    <div class="capabilities-grid">
-                        <div class="capability-item">
-                            <div class="cap-number">01</div>
-                            <h5>Knowledge-Based Responses</h5>
-                            <p>Searches the knowledge base and retrieves relevant information before responding,
-                                providing answers based on company data rather than generic AI responses.</p>
-                        </div>
-                        <div class="capability-item">
-                            <div class="cap-number">02</div>
-                            <h5>Lead Qualification</h5>
-                            <p>Analyzes intent to determine if the conversation represents genuine interest in studying
-                                or traveling, identifying qualified leads for follow-up.</p>
-                        </div>
-                        <div class="capability-item">
-                            <div class="cap-number">03</div>
-                            <h5>Customer Classification</h5>
-                            <p>Analyzes incoming conversations and classifies customers, allowing different conversation
-                                types to follow the appropriate automation workflow.</p>
-                        </div>
-                        <div class="capability-item">
-                            <div class="cap-number">04</div>
-                            <h5>Automated Lead Collection</h5>
-                            <p>Collects relevant information (name, phone, field of study, preferred country) when
-                                genuine interest is demonstrated, forwarding it to the responsible person.</p>
-                        </div>
-                        <div class="capability-item">
-                            <div class="cap-number">05</div>
-                            <h5>Automated Notifications</h5>
-                            <p>Sends qualified leads automatically to the business owner or responsible team member
-                                through Email or Telegram.</p>
-                        </div>
-                        <div class="capability-item">
-                            <div class="cap-number">06</div>
-                            <h5>Human Escalation</h5>
-                            <p>Escalates the conversation to a human via Email or Telegram when the AI lacks reliable
-                                information, avoiding uncertain responses.</p>
                         </div>
                     </div>
                 </div>
