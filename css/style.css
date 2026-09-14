@@ -3,15 +3,15 @@
    ========================================================================== */
    :root {
     /* Dark Theme (Default) */
-    --bg-color: #0b0f19;
-    --bg-alt: #111827;
-    --surface-color: rgba(30, 41, 59, 0.7);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-primary: #6366f1;
-    --accent-secondary: #8b5cf6;
-    --border-color: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.05);
+    --bg-color: #050505;
+    --bg-alt: #111111;
+    --surface-color: rgba(25, 25, 25, 0.8);
+    --text-primary: #A60C19;
+    --text-secondary: #A60C19;
+    --accent-primary: #A60C19;
+    --accent-secondary: #8C0813;
+    --border-color: rgba(166, 12, 25, 0.3);
+    --glass-border: rgba(166, 12, 25, 0.2);
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
@@ -26,15 +26,15 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #f8fafc;
-    --bg-alt: #ffffff;
+    --bg-color: #ffffff;
+    --bg-alt: #f8f8f8;
     --surface-color: rgba(255, 255, 255, 0.8);
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-primary: #4f46e5;
-    --accent-secondary: #7c3aed;
-    --border-color: rgba(0, 0, 0, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.5);
+    --text-primary: #73030A;
+    --text-secondary: #73030A;
+    --accent-primary: #73030A;
+    --accent-secondary: #5a0208;
+    --border-color: rgba(166, 12, 25, 0.2);
+    --glass-border: rgba(166, 12, 25, 0.1);
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
@@ -150,12 +150,12 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     color: #ffffff;
-    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 14px rgba(166, 12, 25, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 20px rgba(166, 12, 25, 0.6);
 }
 
 .btn-outline {
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-outline:hover {
     border-color: var(--accent-primary);
-    background-color: rgba(99, 102, 241, 0.05);
+    background-color: rgba(166, 12, 25, 0.05);
 }
 
 .btn-block {
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(99, 102, 241, 0.3);
+    border-color: rgba(166, 12, 25, 0.3);
 }
 
 /* ==========================================================================
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 80px;
-    background: rgba(11, 15, 25, 0.8);
+    background: rgba(5, 5, 5, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="light"] .navbar {
-    background: rgba(248, 250, 252, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .nav-container {
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent-primary);
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 15px rgba(166, 12, 25, 0.4);
     display: block;
     animation: avatarFloat 6s ease-in-out infinite;
 }
@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 .orb-1 {
     width: 300px;
     height: 300px;
-    background: rgba(99, 102, 241, 0.2);
+    background: rgba(166, 12, 25, 0.2);
     top: 10%;
     right: 20%;
     animation: float 10s ease-in-out infinite;
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 .orb-2 {
     width: 250px;
     height: 250px;
-    background: rgba(139, 92, 246, 0.2);
+    background: rgba(140, 8, 19, 0.2);
     bottom: 10%;
     left: 20%;
     animation: float 8s ease-in-out infinite reverse;
@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
 .skill-icon-wrapper {
     width: 48px;
     height: 48px;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(166, 12, 25, 0.1);
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -609,7 +609,7 @@ h1, h2, h3, h4, h5, h6 {
 .project-badge {
     display: inline-block;
     padding: 6px 12px;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(166, 12, 25, 0.1);
     color: var(--accent-primary);
     border-radius: 20px;
     font-size: 0.85rem;
@@ -623,7 +623,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-highlight-box {
-    background: rgba(99, 102, 241, 0.05);
+    background: rgba(166, 12, 25, 0.05);
     border-left: 4px solid var(--accent-primary);
     padding: 20px;
     margin-bottom: 40px;
@@ -680,10 +680,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .workflow-step.highlight {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(166, 12, 25, 0.1);
     border-color: var(--accent-primary);
     color: var(--text-primary);
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 15px rgba(166, 12, 25, 0.2);
 }
 
 .workflow-arrow {
@@ -748,7 +748,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefits-list li::before {
     content: '✓';
-    color: #10b981; /* Green color for checkmark */
+    color: #73030A; /* Green color for checkmark */
     font-weight: bold;
 }
 
@@ -774,13 +774,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .capability-item:hover {
     transform: translateY(-3px);
-    border-color: rgba(99, 102, 241, 0.4);
+    border-color: rgba(166, 12, 25, 0.4);
 }
 
 .cap-number {
     font-size: 2rem;
     font-weight: 700;
-    color: rgba(99, 102, 241, 0.2);
+    color: rgba(166, 12, 25, 0.2);
     margin-bottom: 10px;
     font-family: monospace;
 }
@@ -813,7 +813,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 64px;
     height: 64px;
     margin: 0 auto 24px;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(166, 12, 25, 0.1);
     color: var(--accent-primary);
     border-radius: 50%;
     display: flex;
@@ -918,7 +918,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-primary);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 0 3px rgba(166, 12, 25, 0.2);
 }
 
 /* ==========================================================================
